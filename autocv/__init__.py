@@ -19,13 +19,13 @@ from langchain_core.output_parsers import JsonOutputParser
 
 from autocv.schemas.sections_schemas import ResumeSchema
 from autocv.utils import utils
-from zlm.utils.latex_ops import latex_to_pdf
-from zlm.utils.llm_models import ChatGPT, Gemini, OllamaModel
-from zlm.utils.data_extraction import read_data_from_url, extract_text
-from zlm.utils.metrics import jaccard_similarity, overlap_coefficient, cosine_similarity, vector_embedding_similarity
-from zlm.prompts.resume_prompt import CV_GENERATOR, RESUME_WRITER_PERSONA, JOB_DETAILS_EXTRACTOR, RESUME_DETAILS_EXTRACTOR
-from zlm.schemas.job_details_schema import JobDetails
-from zlm.variables import DEFAULT_LLM_MODEL, DEFAULT_LLM_PROVIDER, LLM_MAPPING, section_mapping
+from autocv.utils.latex_ops import latex_to_pdf
+from autocv.utils.llm_models import ChatGPT, Gemini, OllamaModel
+from autocv.utils.data_extraction import read_data_from_url, extract_text
+from autocv.utils.metrics import jaccard_similarity, overlap_coefficient, cosine_similarity, vector_embedding_similarity
+from autocv.prompts.resume_prompt import CV_GENERATOR, RESUME_WRITER_PERSONA, JOB_DETAILS_EXTRACTOR, RESUME_DETAILS_EXTRACTOR
+from autocv.schemas.job_details_schema import JobDetails
+from autocv.variables import DEFAULT_LLM_MODEL, DEFAULT_LLM_PROVIDER, LLM_MAPPING, section_mapping
 
 module_dir = os.path.dirname(__file__)
 demo_data_path = os.path.join(module_dir, "demo_data", "user_profile.json")
