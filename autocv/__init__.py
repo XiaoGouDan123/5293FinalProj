@@ -17,8 +17,8 @@ import streamlit as st
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from zlm.schemas.sections_schemas import ResumeSchema
-from zlm.utils import utils
+from autocv.schemas.sections_schemas import ResumeSchema
+from autocv.utils import utils
 from zlm.utils.latex_ops import latex_to_pdf
 from zlm.utils.llm_models import ChatGPT, Gemini, OllamaModel
 from zlm.utils.data_extraction import read_data_from_url, extract_text
